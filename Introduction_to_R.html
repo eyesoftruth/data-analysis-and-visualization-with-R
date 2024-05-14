@@ -1512,14 +1512,14 @@ A CSV file is a type of text file that uses commas to separate values in each ro
 <h3 class="anchored" data-anchor-id="example-importing-data-from-a-text-txt-file">Example: Importing Data from a Text (txt) File</h3>
 <p>To import data from a text file into R, you can use the <code>read.table()</code> function. Let’s assume we have a text file named “data.txt” with tab-separated values (TSV). Here’s how you can import it:</p>
 <div class="sourceCode" id="cb110"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import data from a text file</span></span>
-<span id="cb110-2"><a href="#cb110-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">"data.txt"</span>, <span class="at">header =</span> <span class="cn">TRUE</span>, <span class="at">sep =</span> <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb110-2"><a href="#cb110-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">"datasets/data.txt"</span>, <span class="at">header =</span> <span class="cn">TRUE</span>, <span class="at">sep =</span> <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>In this example, we specify the filename “data.txt”, set <code>header = TRUE</code> to indicate that the first row contains column names, and specify <code>sep = "\t"</code> to indicate that the values are tab-separated.</p>
 </section>
 <section id="example-importing-data-from-a-csv-file" class="level3">
 <h3 class="anchored" data-anchor-id="example-importing-data-from-a-csv-file">Example: Importing Data from a CSV File</h3>
 <p>To import data from a CSV file into R, you can use the <code>read.csv()</code> function. Let’s assume we have a CSV file named “data.csv”. Here’s how you can import it:</p>
 <div class="sourceCode" id="cb111"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb111-1"><a href="#cb111-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import data from a CSV file</span></span>
-<span id="cb111-2"><a href="#cb111-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb111-2"><a href="#cb111-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"datasets/data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>In this example, we simply specify the filename “data.csv”, and R automatically detects the delimiter (comma) and reads the data into a data frame.</p>
 </section>
 <section id="reading-and-exploring-a-csv-file-in-r" class="level3">
